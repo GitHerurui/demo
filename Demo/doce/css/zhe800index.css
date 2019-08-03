@@ -240,6 +240,7 @@ body,
 .line {
     border-top: 1px solid #cccc;
 }
+
 /* 轮播图部分 */
 #nav_warpper {
     width: 100%;
@@ -371,7 +372,7 @@ body,
     height: 100%;
     /* overflow: hidden; */
     position: relative;
-    
+
 }
 
 .rt_warpper .banner {
@@ -439,12 +440,12 @@ body,
 #nav_warpper .banner_r .top_img {
     background: url(../img/index-common.png);
     background-position: 40px -34px;
-    
+
 }
 
 #nav_warpper .banner_r .mid_img {
     background: url(../img/index-common.png);
-    background-position: 40px -34px;   
+    background-position: 40px -34px;
 }
 
 #nav_warpper .banner_r .bot_img {
@@ -452,16 +453,18 @@ body,
     height: 60px;
     background: url(../img/160x160.257ef30a268a72c79e4f0bc49fa6bc2b.80x80.png);
     background-size: contain;
-    
+
 }
-.rt_warpper .list-index{
+
+.rt_warpper .list-index {
     display: flex;
     position: absolute;
     left: 50%;
     bottom: 10px;
-   margin-left: -64px;
+    margin-left: -64px;
 }
-.lis{
+
+.lis {
     width: 12px;
     height: 12px;
     background: #ffff;
@@ -469,30 +472,35 @@ body,
     border-radius: 50%;
     margin: 10px;
 }
-.active{
+
+.active {
     background: red;
 }
+
 /* 品牌精选 */
-#sele{
+#sele {
     width: 100%;
     height: 407px;
 }
-#sele .brand_infor{
+
+#sele .brand_infor {
     margin-top: 32px;
     border-bottom: 1px solid #ff404c;
     padding-bottom: 3px;
     height: 40px;
     text-align: left;
-    position: relative;   
+    position: relative;
 }
-#sele .brand_infor_tit{
+
+#sele .brand_infor_tit {
     margin-left: 13px;
     padding-left: 140px;
     background: url(../img/sele1.png) no-repeat;
     font-size: 24px;
     line-height: 37px;
 }
-#sele .circle{
+
+#sele .circle {
     width: 6px;
     height: 6px;
     border-radius: 6px;
@@ -501,27 +509,32 @@ body,
     top: 19px;
     left: 163px;
 }
-#sele .brand_count{
-   font-size: 14px;
-   color: #666;
-   line-height: 37px;
-    margin-left: 18px;    
+
+#sele .brand_count {
+    font-size: 14px;
+    color: #666;
+    line-height: 37px;
+    margin-left: 18px;
 }
-#sele .brand_infor_cat{
+
+#sele .brand_infor_cat {
     float: right;
     width: 447px;
     margin-top: 12px;
     line-height: 28px;
 }
-#sele .brand_infor_cat a em{
+
+#sele .brand_infor_cat a em {
     color: #333;
     font-size: 14px;
     font-style: normal;
-    padding: 0 6px;                   
+    padding: 0 6px;
 }
-#sele .brand_infor_cat a:hover em{
+
+#sele .brand_infor_cat a:hover em {
     color: red;
 }
+
 #sele .brand_infor_cat a:last-child {
     background: red;
     padding: 0 10px;
@@ -529,83 +542,98 @@ body,
     line-height: 28px;
     margin-left: 1px;
 }
-#sele .brand_infor_cat a:last-child em{
+
+#sele .brand_infor_cat a:last-child em {
     color: #Ffffff;
 }
-#sele .fir{
+
+#sele .fir {
     margin-bottom: 10px;
     height: 200px;
 }
-#sele .fir li{
+
+#sele .fir li {
     width: 392px;
     height: 200px;
     margin-right: 11px;
     float: left;
     position: relative;
     transition: all .5s;
-   
-    
+
+
 }
-#sele .fir li:hover{
+
+#sele .fir li:hover {
     box-shadow: 0px 6px 10px rgba(109, 104, 104, 0.8);
-   
+
 }
-#sele .fir li:last-child{
+
+#sele .fir li:last-child {
     margin: 0;
 }
-#sele .fir li img{
+
+#sele .fir li img {
     width: 100%;
     height: 100%;
 }
-#sele .fir li span{
+
+#sele .fir li span {
     position: absolute;
     width: 100%;
     text-align: center;
-    background: rgba(5,8,9,.45);
+    background: rgba(5, 8, 9, .45);
     color: #Ffffff;
-   font-size: 12px;
-   line-height: 25px;
+    font-size: 12px;
+    line-height: 25px;
     left: 0;
     bottom: 0px;
 }
 
 /*logo部分*/
-.logo{
+.logo {
     width: 100%;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
-   
+
 }
-.logo li{
+
+.logo li {
     width: 120px;
     height: 60px;
     border-left: #ffff 3px solid;
-    border-right:#ffff 3px solid;
+    border-right: #ffff 3px solid;
     position: relative;
-    
+
 }
-.logo li img{
+
+.logo li img {
     width: 100%;
     height: 100%;
 }
-.logo li:hover{
+
+.logo li:hover {
     border-left: rgb(177, 171, 171) 3px solid;
     border-right: rgb(177, 171, 171) 3px solid;
 }
-.logo li:first-child{
+
+.logo li:first-child {
     border-left: none;
 }
-.logo li:nth-child(11){
+
+.logo li:nth-child(11) {
     border-left: none;
 }
-.logo li:nth-child(10){
+
+.logo li:nth-child(10) {
     border-right: none;
 }
-.logo li:nth-child(20){
+
+.logo li:nth-child(20) {
     border-right: none;
 }
-.logo li a i{
+
+.logo li a i {
     display: block;
     height: 18px;
     top: 23px;
@@ -613,29 +641,33 @@ body,
     right: -1px;
     border-right: 1px solid #eaeaea;
 }
-.logo li:nth-child(10) i{
+
+.logo li:nth-child(10) i {
     display: none;
 }
-.logo li:nth-child(20) i{
+
+.logo li:nth-child(20) i {
     display: none;
 }
 
 /*限时秒杀*/
-.limit .brand_infor{
+.limit .brand_infor {
     border-bottom: 1px solid #ff404c;
     padding-bottom: 3px;
     height: 40px;
     text-align: left;
-    position: relative;   
+    position: relative;
 }
-.limit .brand_infor_tit{
+
+.limit .brand_infor_tit {
     margin-left: 13px;
     padding-left: 140px;
     background: url(../img/limit.png) no-repeat;
     font-size: 24px;
     line-height: 37px;
 }
-.limit .circle{
+
+.limit .circle {
     width: 6px;
     height: 6px;
     border-radius: 6px;
@@ -644,84 +676,99 @@ body,
     top: 19px;
     left: 163px;
 }
-.limit .brand_count{
-   font-size: 14px;
-   color: #666;
-   line-height: 37px;
-    margin-left: 18px;    
+
+.limit .brand_count {
+    font-size: 14px;
+    color: #666;
+    line-height: 37px;
+    margin-left: 18px;
 }
-.limit .brand_infor_cat{
+
+.limit .brand_infor_cat {
     float: right;
     width: 588px;
     margin-top: 10px;
     line-height: 28px;
 }
-.limit .brand_infor_cat a em{
+
+.limit .brand_infor_cat a em {
     color: #333;
     font-size: 12px;
     font-style: normal;
-    padding: 6px;                   
+    padding: 6px;
 }
-.limit .brand_infor_cat a:hover em{
+
+.limit .brand_infor_cat a:hover em {
     background: red;
     color: #Ffffff;
 }
-.limit .brand_infor_cat a:nth-child(6) em{
+
+.limit .brand_infor_cat a:nth-child(6) em {
     background: red;
     color: #Ffffff;
 }
-.limit{
+
+.limit {
     border-bottom: 1px solid #cccc;
     height: 300px;
 }
-.limit .fir{
+
+.limit .fir {
     margin-bottom: 10px;
     height: 200px;
 }
-.limit .fir li{
+
+.limit .fir li {
     width: 185px;
     height: 255px;
     margin-right: 18px;
     float: left;
-    transition: all .5s;    
+    transition: all .5s;
 }
-.limit .fir li:hover{
+
+.limit .fir li:hover {
     box-shadow: 0px 6px 15px rgba(78, 74, 74, 0.8);
-   
+
 }
-.limit .fir li:last-child{
+
+.limit .fir li:last-child {
     margin: 0;
 }
-.limit .fir li .fir_bor{
+
+.limit .fir li .fir_bor {
     width: 100%;
     height: 185px;
     position: relative;
     overflow: hidden;
 }
-.limit .fir li img{
+
+.limit .fir li img {
     width: 100%;
     height: 185px;
 }
-.limit .fir li span{
+
+.limit .fir li span {
     position: absolute;
     width: 100%;
-   transition: all .2s;
+    transition: all .2s;
     overflow: hidden;
     text-align: center;
     background: rgba(18, 18, 19, 0.45);
     opacity: 0.8;
     color: #Ffffff;
-   font-size: 12px;
-   line-height: 20px;
+    font-size: 12px;
+    line-height: 20px;
     left: 0;
     bottom: -25px;
 }
-.limit .fir li a h4{
+
+.limit .fir li a h4 {
     font-size: 16px;
     color: red;
     padding: 10px 12px;
 }
-.limit .fir li a p{
+
+.limit .fir li a p {
     color: #666666;
     font-size: 12px;
     padding: 0px 10px;
@@ -729,13 +776,14 @@ body,
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.limit .fir li:hover span{
-   bottom: 0px;
+
+.limit .fir li:hover span {
+    bottom: 0px;
 }
 
 /*热销部分*/
 
-#hot .brand_infor{
+#hot .brand_infor {
     margin-top: 32px;
     border-bottom: 1px solid #ff404c;
     padding-bottom: 3px;
@@ -743,22 +791,26 @@ body,
     text-align: left;
     font-size: 14px;
     color: #666;
-    position: relative;   
+    position: relative;
 }
-#hot .brand_infor a{
+
+#hot .brand_infor a {
     color: #666
 }
-#hot .brand_infor a:hover{
+
+#hot .brand_infor a:hover {
     color: red;
 }
-#hot .brand_infor_tit{
+
+#hot .brand_infor_tit {
     margin-left: 13px;
     padding-left: 140px;
     background: url(../img/hot.png) no-repeat;
     font-size: 24px;
     line-height: 37px;
 }
-#hot .circle{
+
+#hot .circle {
     width: 6px;
     height: 6px;
     border-radius: 6px;
@@ -767,57 +819,66 @@ body,
     top: 19px;
     left: 163px;
 }
-#hot .brand_count{
-   font-size: 14px;
-   color: #666;
-   line-height: 37px;
-    margin-left: 18px;    
+
+#hot .brand_count {
+    font-size: 14px;
+    color: #666;
+    line-height: 37px;
+    margin-left: 18px;
 }
-#hot .fir{
+
+#hot .fir {
     margin-bottom: 10px;
     height: 200px;
 }
-#hot .fir li{
+
+#hot .fir li {
     width: 232px;
     height: 159px;
     margin-right: 10px;
     float: left;
     position: relative;
-    transition: all .5s;    
+    transition: all .5s;
 }
-#hot .fir li:hover{
+
+#hot .fir li:hover {
     box-shadow: 0px 6px 10px rgba(109, 104, 104, 0.8);
-   
+
 }
-#hot .fir li:last-child{
+
+#hot .fir li:last-child {
     margin: 0;
 }
-#hot .fir li img{
+
+#hot .fir li img {
     width: 100%;
     height: 100%;
 }
 
 /* 今日更新 */
-#tonew{
+#tonew {
     width: 100%;
     height: 407px;
 }
-#tonew .brand_infor{
+
+#tonew .brand_infor {
     margin-top: 32px;
     border-bottom: 1px solid #ff404c;
     padding-bottom: 3px;
     height: 40px;
     text-align: left;
-    position: relative;   
+    position: relative;
 }
-#tonew .brand_infor_tit{
+
+#tonew .brand_infor_tit {
     margin-left: 13px;
     padding-left: 160px;
     background: url(../img/new.png) no-repeat;
     font-size: 24px;
     line-height: 37px;
 }
-#tonew .circle{
+
+#tonew .circle {
     width: 6px;
     height: 6px;
     border-radius: 6px;
@@ -826,28 +887,33 @@ body,
     top: 19px;
     left: 183px;
 }
-#tonew .brand_count{
-   font-size: 14px;
-   color: #666;
-   line-height: 37px;
-    margin-left: 18px;    
+
+#tonew .brand_count {
+    font-size: 14px;
+    color: #666;
+    line-height: 37px;
+    margin-left: 18px;
 }
-#tonew .brand_infor_cat{
+
+#tonew .brand_infor_cat {
     float: right;
     margin-top: 10px;
     font-size: 14px;
     line-height: 28px;
     color: #333;
 }
-#tonew .brand_infor_cat a em{
+
+#tonew .brand_infor_cat a em {
     color: #333;
     font-size: 14px;
     font-style: normal;
-    padding: 0 6px;                   
+    padding: 0 6px;
 }
-#tonew .brand_infor_cat a:hover em{
+
+#tonew .brand_infor_cat a:hover em {
     color: red;
 }
+
 #tonew .brand_infor_cat a:last-child {
     background: red;
     padding: 0 10px;
@@ -855,32 +921,45 @@ body,
     line-height: 28px;
     margin-left: 1px;
 }
-#tonew .brand_infor_cat a:last-child em{
+
+#tonew .brand_infor_cat a:last-child em {
     color: #Ffffff;
 }
-#tonew .l-tonew{
+
+#tonew .bg {
+    background: #f2f2f2;
+}
+
+#tonew .l-tonew {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#tonew .l-tonew li{
-    width: 23.6%;  
-    transition: all .5s;    
+
+#tonew .l-tonew li {
+    background: #Ffffff;
+    margin-bottom: 30px;
+    width: 23.6%;
+    transition: all .5s;
 }
-#tonew .l-tonew li .tonewimg{
-    width:100%;
+
+#tonew .l-tonew li .tonewimg {
+    width: 100%;
     height: 283px;
     cursor: pointer;
 }
-#tonew .l-tonew li:hover{
-    box-shadow: 0px 6px 10px rgba(109, 104, 104, 0.8);  
+
+#tonew .l-tonew li:hover {
+    box-shadow: 0px 6px 10px rgba(109, 104, 104, 0.8);
 }
-#tonew .l-tonew li img{
+
+#tonew .l-tonew li img {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
-#tonew .l-tonew li .l-title{
+
+#tonew .l-tonew li .l-title {
     padding: 0 10px;
     font-size: 12px;
     color: #666666;
@@ -888,16 +967,365 @@ body,
     display: flex;
     justify-content: space-between;
 }
-#tonew .l-tonew li a{
-    color: #666666;     
-}
-#tonew .l-tonew li a:hover{
-    text-decoration: underline;
-}
-#tonew .l-tonew li p{
-    padding: 0 10px;
-    font-size: 16px;
-    color:orangered;
-    line-height: 34px;
+
+#tonew .l-tonew li a {
+    display: inline-block;
+    width: 195px;
+    color: #666666;
 }
 
+#tonew .l-tonew li a:hover {
+    text-decoration: underline;
+}
+
+#tonew .l-tonew li .coupon-collect {
+    position: relative;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#tonew .l-tonew li .coupon-collect .coupon {
+    font-size: 16px;
+    color: #ec1611;
+    display: inline-block;
+    width: 194px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#tonew .l-tonew li .coupon-collect .brand_fav {
+    right: 10px;
+    top: 0;
+    position: absolute;
+    background: url(../img/big_img_v3.png) no-repeat -493px -64px;
+    font: 12px/14px "microsoft yahei";
+    padding-left: 18px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#tonew .l-tonew li .coupon-collect .brand_fav:hover {
+    background: url(../img/favorite_icon.png) 0 -3px no-repeat;
+    color: #ec1611;
+}
+
+#pic {
+    width: 100%;
+    height: 159px;
+}
+
+#pic .bt-hot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pic .bt-hot li {
+    width: 19.3%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#pic .bt-hot li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#pic .bt-hot li a img {
+    width: 100%;
+    height: 10%;
+}
+
+#pic .bt-hot li:hover {
+    box-shadow: 0px 6px 10px rgba(109, 104, 104, 0.8);
+}
+
+#pag {
+    width: 100%;
+    margin-top: 10px;
+    height: 90px;
+}
+
+#pag .lis-pag {
+    vertical-align: middle;
+    width: 404px;
+    height: 50px;
+    text-align: center;
+    color: #666666;
+    margin: auto;
+
+
+}
+
+.lis-pag span {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    line-height: 30px;
+    width: 25px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lis-pag .prve {
+    width: 30px;
+    height: 30px;
+    background: url(../img/prev_nextpng.png);
+    background-position: -46px -32px;
+}
+
+.current {
+    color: red;
+}
+
+.lis-pag .next {
+    width: 30px;
+    height: 30px;
+    background: url(../img/prev_nextpng.png);
+    background-position: -46px 0;
+}
+
+.pag-bg {
+    padding-bottom: 90px;
+}
+
+footer {
+    width: 100%;
+    border-top: 2px solid red;
+}
+
+footer .abaut {
+    height: 298px;
+    width: 100%;
+}
+
+footer .abaut ul {
+    display: flex;
+}
+
+footer .abaut ul li {
+    padding-top: 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .abaut ul li span {
+    display: block;
+    font: 16px/30px "microsoft yahei";
+    color: #333;
+}
+
+footer .abaut ul li .sicont {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 14px;
+}
+
+footer .abaut ul li a {
+    font-size: 12px;
+    line-height: 24px;
+    color: #999999;
+}
+
+footer .abaut ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer .abaut ul li .abauts {
+    background: url(../img/foot_icon.png);
+}
+
+footer .abaut ul li .shoping {
+    background: url(../img/foot_icon.png);
+    background-position: -95px 0;
+}
+
+footer .abaut ul li .basscom {
+    background: url(../img/foot_icon.png);
+    background-position: 0 -95px;
+}
+
+footer .abaut ul li .usersfas {
+    background: url(../img/foot_icon.png);
+    background-position: -190px 0;
+}
+
+footer .abaut ul li .nextto {
+    background: url(../img/foot_icon.png);
+    background-position: -95px -95px;
+}
+
+footer .abaut ul li .bot-logo {
+    margin-top: 6px;
+    margin: 0 auto;
+    width: 104px;
+    height: 220px;
+    background: url(../img/footer_code.png) no-repeat;
+}
+
+.abaut ul li h3,
+.abaut ul li h4,
+.abaut ul li h5,
+.abaut ul li h6 {
+    height: 24px;
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.abaut ul li h3 i,
+.abaut ul li h4 i {
+    font-style: normal;
+    color: red;
+}
+
+.abaut ul li h6 .txt {
+    height: 21px;
+    line-height: 21px;
+    width: 98px;
+    padding-left: 5px;
+    color: #ccc;
+    font-family: "微软雅黑";
+}
+
+.abaut ul li h6 .sbm {
+    line-height: 25px;
+    width: 42px;
+    cursor: pointer;
+    color: #999;
+    font-family: "微软雅黑";
+}
+
+.abaut ul li:last-child span {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.friendly_links {
+    margin: 0 auto;
+    color: #666;
+    width: 750px;
+    line-height: 20px
+}
+
+.friendly_links span {
+    float: left;
+    color: #999;
+    font-family: "微软雅黑"
+}
+
+.friendly_links .links {
+    float: left;
+    width: 620px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    font-family: "微软雅黑"
+}
+
+.friendly_links .links ul {
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.friendly_links .links ul li {
+    float: left;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 5px
+}
+
+.friendly_links .links ul li a {
+    color: #999;
+    margin-right: 10px;
+    float: left
+}
+
+.friendly_links .more {
+    float: left;
+    margin-left: 10px;
+    color: #999;
+    font-family: "微软雅黑"
+}
+
+.friendly_links .more:hover {
+    color: #ec1611
+}
+footer .fl-link{
+   padding-top: 20px;
+    width: 750px;
+   margin: auto;
+}
+footer .fl-link span{
+    float: left;
+    color: #999;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 20px;
+}
+footer .fl-link .links{
+   float: left;
+    width: 620px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+footer .fl-link .links ul{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+footer .fl-link a{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+footer .foot-con{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 10px;
+    color: #999999;
+}
+footer .foot-con a{
+    color: #999999;
+}
+footer .foot-con a:hover{
+    text-decoration: underline;
+}
+footer .foot-lg{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer .foot-lg .span1{
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    margin: 3px;
+    background: url(../img/logo.jpg);
+    background-size: contain;
+}
+footer .foot-lg .span2{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 3px;
+    background: url(../img/gsrz-icon.jpg);
+    background-size: contain;
+}

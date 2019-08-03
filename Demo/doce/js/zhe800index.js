@@ -17,7 +17,7 @@ $(function(){
     "smimg":["../img/320x320.1bb39e2d8567ee9e503d23f701ddd34a.160x160.png",
     "../img/320x320.0dac66b785ca5304951298c11b7e9e1d.160x160.png"]
     }]
-//乱波图
+//轮波图
     class BannerManager{
         constructor(data){
             this.data = data;
@@ -101,6 +101,23 @@ $(function(){
    
   }
   let banner = new  BannerManager(arr);
-       banner.init()
+       banner.init();
+
+       //友情轮播
+setInterval(()=>{
+    var itop = parseInt($(".links ul").css("top"));
+    // console.log(itop);
+    if(itop < -66){
+        itop = 0;
+    } else {
+        itop -= 22;
+        let ltop = itop + "px";
+ $(".links ul").css("top",[ltop]);
+        // console.log(ltop);
+    }
+         
+    },2000)
+      
+    
 
 });
