@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body,
+#box {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+#box .bg {
+    background: #ffffff;
+}
+
+#box .banner {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 320px;
+    background: url(../img/liebiaoye-img/1920x320.087cef08f02db3ac0656076ed8b822ac.jpg) no-repeat;
+}
+
+#box .brand_top_title {
+    width: 100%;
+    height: 133px;
+    /* border: 1px solid #cccccc; */
+}
+
+#box .brand_top_title .clear {
+    overflow: hidden;
+}
+
+#box .coupon_fav {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    color: #ec1611;
+}
+
+#box .coupon_fav i {
+    float: left;
+    padding: 5px 10px;
+    border: 1px solid #ec1611;
+    line-height: 15px;
+    margin-top: 7px;
+
+    font-style: normal;
+}
+
+#box .coupon_fav em {
+    float: left;
+    font-style: normal;
+    line-height: 45px;
+    margin-left: 15px;
+
+}
+
+.brand_top_title .detail_brand_fav span {
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #999999;
+    padding-left: 18px;
+    background: url(../img/liebiaoye-img/big_bg_img_v3.png) no-repeat -493px -64px;
+}
+
+.brand_top_title .detail_brand_fav span:hover {
+    background: url(../img/favorite_icon.png) no-repeat 0px -3px;
+    color: #ec1611;
+}
+
+.brand_top_title .uplis {
+    width: 100%;
+    background: #ffffff;
+    height: 36px;
+    font-size: 12px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.brand_top_title .uplis a {
+    display: inline-block;
+    text-align: center;
+    color: #000000;
+    line-height: 36px;
+    width: 60px;
+    border-right: 1px solid #f2f2f2;
+}
+
+.brand_top_title .uplis a:last-child {
+    border: none;
+    width: 113px;
+}
+
+.brand_top_title .uplis a:last-child i {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #cccccc;
+    margin-right: 1px;
+}
+
+.brand_top_title .uplis a:hover {
+    color: red;
+}
+
+.brand_top_title .donwlis {
+    width: 100%;
+    height: 36px;
+    background: #ffffff;
+}
+
+.brand_top_title .donwlis ul {
+    display: flex;
+}
+
+.brand_top_title .donwlis ul li {
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.brand_top_title .donwlis ul li a {
+    padding: 0 40px;
+    color: #000000;
+    border-right: 1px solid #000000;
+}
+
+.brand_top_title .donwlis ul li:last-child a {
+    border: none;
+}
+
+.brand_top_title .donwlis ul li:hover a {
+    color: red;
+}
+
+
+/* 侧栏导航部分 */
+#sidebar {
+    width: 34px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 3333;
+    color: #fff;
+}
+
+#sidebar .sidebar-cart {
+    margin-top: 50px;
+    width: 100%;
+    height: 135px;
+    font-size: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#sidebar .sidebar-cart:hover {
+    background: #C00;
+}
+
+#sidebar .sidebar-cart .cart-icon {
+
+    margin: 14px auto 0;
+    width: 19px;
+    height: 17px;
+    background: url(../img/sidebar_cart.png)
+}
+
+#sidebar .sidebar-cart .tab-text {
+    margin: 10px auto 0;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #C00;
+
+}
+
+#sidebar .sidebar-cart:hover .tab-text {
+    background: #Ffffff;
+    color: #C00;
+}
+
+#sidebar .sidebar-cart .tab-text-cart {
+    width: 20px;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+#sidebar .side-tab-top1 {
+    display: block;
+    width: 34px;
+    height: 44px;
+    position: relative;
+    cursor: pointer;
+}
+
+#sidebar .side-tab-top1:hover {
+    background: #C00;
+}
+
+#sidebar .side-tab-top1 .tab-icon {
+    width: 100%;
+    height: 100%;
+    background: url(../img/side_golds.png) no-repeat 6px -188px;
+}
+
+#sidebar .side-tab-top1 .tab-tip {
+    height: 100%;
+    width: 125px;
+    font-size: 12px;
+    position: absolute;
+    right: 34px;
+    top: 0;
+    background: #C00;
+    text-align: center;
+    display: none;
+}
+
+#sidebar .side-tab-top1 .tab-tip a {
+    font-size: 12px;
+    line-height: 42px;
+    color: #Ffffff;
+
+}
+
+#sidebar .side-tab-top1:hover .tab-tip {
+    display: block;
+}
+
+#sidebar .side-tab-top1 .coupons-icon {
+    background: url(../img/quan_iconnew.png) no-repeat;
+    background-position: center;
+}
+
+#sidebar .side-tab-top1 .myFavorites-icon {
+    background: url(../img/myFavorites.png) no-repeat;
+    background-position: center;
+}
+
+#sidebar .side-tab-top1 .imMessage-icon {
+    background: url(../img/side_golds.png) 4px -228px;
+
+}
+
+#sidebar .side-tab-top1 .checkin-icon {
+    background: url(../img/sidePanel_checkin1N.gif) no-repeat;
+
+}
+
+#sidebar .side-tab-top1:hover .checkin-icon {
+    background: url(../img/side_golds.png) 0px -47px;
+}
+
+#sidebar .side-tab-top1 .checkin a {
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto;
+    display: inline-block;
+    height: 100%;
+    padding: 0 8px;
+
+}
+
+#sidebar .side-tab-top1 .gender-icon {
+    background: url(../img/sidePanelIconsNew.png) -386px 4px;
+}
+
+#sidebar .side-tab-top1 .gender a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px;
+    line-height: 14px;
+    border: 1px solid #fff;
+    background: #c7000b;
+    color: #fff;
+    margin: 12px 1px;
+    border-radius: 3px;
+}
+
+#sidebar .side-tab-top1 .gender a:last-child {
+    background: #Ffffff;
+    color: red;
+}
+
+#sidebar .side-tab-top1 .qrcode-icon {
+    background: url(../img/sidePanelIconsNew.png) -267px 4px;
+}
+
+#sidebar .side-tab-top1 .qrcode {
+    width: 106px;
+    height: 144px;
+    position: absolute;
+    top: 0;
+    right: 34px;
+    background: url(../img/side_two_dimension.png) no-repeat;
+}
+
+#sidebar .side-tab-top1 .faq-icon {
+    background: url(../img/sidePanelIconsNew.png) -330px 4px;
+}
+
+#sidebar .side-tab-top1 .feedback-icon {
+    background: url(../img/sidePanelIconsNew.png) -501px 3px;
+}
+
+#sidebar .side-tab-top1 .totop-icon {
+    background: url(../img/sidePanelIconsNew.png) -554px 2px;
+}

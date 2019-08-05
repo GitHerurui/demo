@@ -1,0 +1,477 @@
+#box .content {
+    width: 1200px;
+    margin: auto;
+    /* border: 1px solid orangered; */
+}
+
+/* 头部 */
+#box .toolbar {
+    width: 100%;
+    height: 29px;
+    background: #fafaff
+}
+
+#box .toolbar .list {
+    float: right;
+    display: flex;
+    font-size: 12px;
+    line-height: 29px;
+}
+
+#box .toolbar .list a {
+    padding: 0 18px;
+    color: #000000;
+    border-right: 1px solid #cccccc;
+}
+
+#box .toolbar .list li:last-child a {
+    border: none;
+}
+
+#box .toolbar .list li .a1 {
+    border: none;
+    padding-right: 0px;
+}
+
+#box .toolbar .list li .a2 {
+    padding-left: 4px;
+}
+
+#box .toolbar .list :nth-child(4) a {
+    color: red;
+}
+
+#box .toolbar .list a:hover {
+    color: red;
+}
+
+#box .toolbar .list a:hover i {
+    color: #000000;
+}
+
+#box .toolbar .list .lis2 {
+    position: relative;
+}
+
+#box .toolbar .list .lis2 .after {
+    width: 100%;
+    padding: 4px;
+    box-shadow: 0px 8px 10px gray;
+    position: absolute;
+    left: 0px;
+    bottom: -96px;
+    background: #fafaff;
+    display: none;
+}
+
+#box .toolbar .list .lis2 .after img {
+    width: 100%;
+}
+
+#box .toolbar .list .lis2:hover .after {
+    z-index: 999999;
+    display: block;
+}
+
+#box .toolbar .list .span0 {
+    margin-left: 2px;
+    color: red;
+}
+
+.area {
+    width: 100%;
+    height: 77px;
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.area .l {
+    margin-top: 20px
+}
+
+.area .l .l_img img {
+    width: 255px;
+    height: 55px;
+    display: inline-block;
+}
+
+.search {
+    /* width: 547px; */
+    height: 39px;
+    margin: 30px 0px 0px 30px;
+    border: 2px solid #e60044;
+    border-right: none;
+    color: #cccc;
+    position: relative;
+
+
+}
+
+.sear {
+    width: 111px;
+    height: 100%;
+    display: inline-block;
+    background: url(../img/index-common.png);
+    background-position: 237px -34px;
+    color: #ffffff;
+    line-height: 35px;
+    padding-left: 32px;
+
+
+}
+
+.search input {
+    border: none;
+    width: 375px;
+    height: 28px;
+    outline: none;
+}
+
+.search .sc {
+    display: inline-block;
+    height: 24px;
+    width: 40px;
+    background: url(../img/index-common.png);
+    background-position: -31px 0;
+    position: absolute;
+    right: 0px;
+    bottom: 3px
+}
+
+.search .sc_r {
+    position: absolute;
+    top: -2px;
+    right: -15px;
+    width: 15px;
+    height: 39px;
+    background: url(../img/index-common.png);
+    background-position: 0px -34px;
+
+}
+
+.area .link {
+    margin-top: 30px;
+    width: 340px;
+    height: 40px;
+    margin-left: 80px;
+}
+
+.head-nav {
+    width: 100%;
+    height: 40px;
+}
+
+.head-nav .nav-1 {
+    float: left;
+    overflow: hidden;
+}
+
+.head-nav .nav-1 a {
+    display: inline-block;
+    width: 127px;
+    text-align: center;
+    color: rgba(109, 100, 100, 0.8);
+    line-height: 38px;
+    font-size: 16px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.head-nav .nav-1 a:hover {
+    border-bottom: 2px solid orangered;
+    box-shadow: 0px 6px 10px #3d3838;
+
+}
+
+.head-nav .nav-1 a:nth-child(1):hover {
+    border: none;
+}
+
+.head-nav .nav-1 a:nth-child(1) {
+    color: #ffffff;
+    background: #e60044;
+    width: 150px;
+    border: none;
+}
+
+.head-nav .nav-1 a:hover {
+    border-bottom: 2px solid orangered;
+
+}
+
+.head-nav .r_con {
+    float: right;
+    width: 126px;
+    height: 40px;
+    position: relative;
+}
+
+.head-nav .r_con .sign {
+    width: 500px;
+    height: 360px;
+    position: absolute;
+    right: 1px;
+    top: 41px;
+    display: none;
+}
+
+.head-nav .r_con:hover .sign {
+    display: block;
+    z-index: 9999;
+}
+
+/* -------------底部-------------- */
+footer {
+    width: 100%;
+    border-top: 2px solid red;
+}
+
+footer .abaut {
+    height: 298px;
+    width: 100%;
+}
+
+footer .abaut ul {
+    display: flex;
+}
+
+footer .abaut ul li {
+    padding-top: 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .abaut ul li span {
+    display: block;
+    font: 16px/30px "microsoft yahei";
+    color: #333;
+}
+
+footer .abaut ul li .sicont {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 14px;
+}
+
+footer .abaut ul li a {
+    font-size: 12px;
+    line-height: 24px;
+    color: #999999;
+}
+
+footer .abaut ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer .abaut ul li .abauts {
+    background: url(../img/foot_icon.png);
+}
+
+footer .abaut ul li .shoping {
+    background: url(../img/foot_icon.png);
+    background-position: -95px 0;
+}
+
+footer .abaut ul li .basscom {
+    background: url(../img/foot_icon.png);
+    background-position: 0 -95px;
+}
+
+footer .abaut ul li .usersfas {
+    background: url(../img/foot_icon.png);
+    background-position: -190px 0;
+}
+
+footer .abaut ul li .nextto {
+    background: url(../img/foot_icon.png);
+    background-position: -95px -95px;
+}
+
+footer .abaut ul li .bot-logo {
+    margin-top: 6px;
+    margin: 0 auto;
+    width: 104px;
+    height: 220px;
+    background: url(../img/footer_code.png) no-repeat;
+}
+
+.abaut ul li h3,
+.abaut ul li h4,
+.abaut ul li h5,
+.abaut ul li h6 {
+    height: 24px;
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.abaut ul li h3 i,
+.abaut ul li h4 i {
+    font-style: normal;
+    color: red;
+}
+
+.abaut ul li h6 .txt {
+    height: 21px;
+    line-height: 21px;
+    width: 98px;
+    padding-left: 5px;
+    color: #ccc;
+    font-family: "微软雅黑";
+}
+
+.abaut ul li h6 .sbm {
+    line-height: 25px;
+    width: 42px;
+    cursor: pointer;
+    color: #999;
+    font-family: "微软雅黑";
+}
+
+.abaut ul li:last-child span {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.friendly_links {
+    margin: 0 auto;
+    color: #666;
+    width: 750px;
+    line-height: 20px
+}
+
+.friendly_links span {
+    float: left;
+    color: #999;
+    font-family: "微软雅黑"
+}
+
+.friendly_links .links {
+    float: left;
+    width: 620px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    font-family: "微软雅黑"
+}
+
+.friendly_links .links ul {
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.friendly_links .links ul li {
+    float: left;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 5px
+}
+
+.friendly_links .links ul li a {
+    color: #999;
+    margin-right: 10px;
+    float: left
+}
+
+.friendly_links .more {
+    float: left;
+    margin-left: 10px;
+    color: #999;
+    font-family: "微软雅黑"
+}
+
+.friendly_links .more:hover {
+    color: #ec1611
+}
+
+footer .fl-link {
+    padding-top: 20px;
+    width: 750px;
+    margin: auto;
+}
+
+footer .fl-link span {
+    float: left;
+    color: #999;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 20px;
+}
+
+footer .fl-link .links {
+    float: left;
+    width: 620px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+footer .fl-link .links ul {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+footer .fl-link a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+footer .fl-link a:hover {
+    text-decoration: underline;
+}
+
+footer .fl-link>a:last-child:hover {
+    color: red;
+}
+
+footer .foot-con {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 10px;
+    color: #999999;
+}
+
+footer .foot-con a {
+    color: #999999;
+}
+
+footer .foot-con a:hover {
+    text-decoration: underline;
+}
+
+footer .foot-lg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .foot-lg .span1 {
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    margin: 3px;
+    background: url(../img/logo.jpg);
+    background-size: contain;
+}
+
+footer .foot-lg .span2 {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 3px;
+    background: url(../img/gsrz-icon.jpg);
+    background-size: contain;
+}
