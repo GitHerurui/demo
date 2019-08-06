@@ -30,6 +30,7 @@ body,
 #box .brand_top_title {
     width: 100%;
     height: 133px;
+    margin-bottom: 15px;
     /* border: 1px solid #cccccc; */
 }
 
@@ -106,6 +107,7 @@ body,
     height: 12px;
     border: 1px solid #cccccc;
     margin-right: 1px;
+    background: url(../img/hot/)
 }
 
 .brand_top_title .uplis a:hover {
@@ -140,7 +142,13 @@ body,
 .brand_top_title .donwlis ul li:hover a {
     color: red;
 }
-
+.scollt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+}
 
 /* 侧栏导航部分 */
 #sidebar {
@@ -316,4 +324,218 @@ body,
 
 #sidebar .side-tab-top1 .totop-icon {
     background: url(../img/sidePanelIconsNew.png) -554px 2px;
+}
+
+/* 今日必抢 */
+
+.brand_title {
+    height: 45px;
+    color: #ec1611;
+    background: url(../img/hot/brand_border.png) repeat-x left bottom;
+    font: 20px/45px 'microsoft yahei';
+    text-align: left;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.brand_title .title_icon {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(../img/hot/brand_title.png) no-repeat -39px 0;
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+}
+.bd-detail{
+    width: 100%;
+}
+.bd-detail .list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bd-detail .list li{
+    width: 23.5%;
+    height: 375px;
+    
+}
+.bd-detail .list li .bimg{
+    width: 100%;
+    height: 283px;
+}
+.bd-detail .list li .bimg img{
+    width: 100%;
+    height: 100%;
+}
+.bd-detail .list li h3{
+    padding: 5px 10px 0 12px;
+    height: 20px;
+    width: 100%;
+    color: #666;
+    text-align: left;
+    font: 12px/20px Arial,"microsoft yahei";
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #fff;
+    overflow: hidden;
+}
+.bd-detail .list li h3 a{
+    color:#666; 
+}
+.bd-detail .list li h4{
+    text-align: left;
+    background: #fff;
+    line-height: 37px;
+    z-index: 999;
+    padding: 0 10px;
+    color: red;
+}
+.bd-detail .list li h4 em{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+}
+.bd-detail .list li h4 del{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    color: #000;
+}
+.bd-detail .list li h4 span{
+    float: right;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    color: #000;
+    line-height: 37px;
+}
+.bd-detail .list li .bt-title{
+    padding: 8px 10px 0;
+    border-top: 1px dashed #cccccc;
+    background: #Ffffff;
+    font-size: 12px;
+    color: red;
+}
+.bd-detail .list li .bt-title span{
+    padding: 0 3px;
+    
+}
+.bd-detail .list li .bt-title .a1{ 
+    color: red;
+}
+.bd-detail .list li .bt-title .a2{
+    display: inline-block;
+    color: #000;
+    padding-left: 18px;
+    margin-left: 8px;
+    background: url(../img/liebiaoye-img/big_bg_img_v3.png) no-repeat -493px -64px;
+    
+}
+.bd-detail .list li .bt-title .a3{
+    color: #000;
+}
+.bd-detail .list li .insaid{
+    position: relative;
+    height: 342px;
+    overflow: hidden;
+}
+.bd-detail .list li .insaid .inventory{
+    font-size: 12px;
+    background: #636465;
+    padding:3px 8px;
+    color: #Ffffff;
+    position: absolute;
+    right: 0;
+    top: 260px;  
+}
+.bd-detail .list li:hover{
+    box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
+}
+.bd-detail .list li:hover .insaid{
+    height: auto;
+}
+.brands_title{
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.brands_title .brands_name{
+    float: left;
+    font-weight: 800;
+    color: red;
+    font-size: 16px;
+    line-height: 16px;
+    padding-right: 10px;
+    border-right: 1px solid #cccccc;
+}
+
+.brands_title .sp1{
+    float: left;
+    margin-left: 10px;
+    height: 17px;
+    padding-left: 24px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #666;
+    background: url(../img/liebiaoye-img/clock2.png) no-repeat;
+}
+.brands_title .sec{
+    float: right;
+    font-size: 12px;
+    color: #000;
+}
+.brands_title .sec:hover{
+    color: red;
+}
+#deal{
+    width: 100%;
+}
+#deal .list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#deal .list li{
+    width: 15%;
+    height: 215px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+#deal .list li .bimg{
+    width: 100%;
+    height: 180px;
+}
+#deal .list li .bimg img{
+    width: 100%;
+    height: 100%;
+}
+#deal .list li h3{
+    position: absolute;
+    text-align: center;
+    background: rgb(5, 5, 5);
+    left: 0px;
+    padding: 0px 10px;
+    height: 25px;
+    top:160px;
+    opacity: 0.6;
+   
+}
+#deal .list li h3 a{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 25px;
+}
+#deal .list li h4{
+    text-align: center;
+}
+#deal .list li h4 i{
+    font-style: normal;
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
 }
