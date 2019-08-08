@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+}
+#box{
+    width: 980px;
+    margin: auto;
+}
+#box .header{
+    width: 100%;
+    padding: 20px 0 10px;
+    overflow: hidden;
+}
+#box .header .logo{
+    float: left;
+}
+#box .header .logo a{
+    display: inline-block;
+    width: 232px;
+    height: 57px;
+    background: url(../img/logo_zhe800_new.png) no-repeat;
+}
+#box .header .header-rt{
+    float: right;
+    margin-top: 35px;
+    font-size: 12px;    
+}
+/* 拖拽验证 */
+.drag{
+    width: 300px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #e8e8e8;
+    position: relative;
+    margin-left: 64px;
+}
+.bg{
+    width:40px;
+    height: 100%;
+    position: absolute;
+    background-color: #75CDF9;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    user-select: none;
+}
+.btn{
+    width:40px;
+    height: 34px;
+    position: absolute;
+    border:1px solid #ccc;
+    cursor: move;
+    font-family: "宋体";
+    text-align: center;
+    background-color: #fff;
+    user-select: none;
+    color:#666;
+}
+#register{
+    width: 100%;
+    height: 520px;
+    padding: 40px 60px;
+    font-size: 12px;
+    color: #666666;
+    background: #fff;
+}
+#register .left{
+    width: 460px;
+    height: 330px;
+    float: left;
+    background: url(../img/460x330.c12e9338c2fcfdefd508e4f05a6dc2f5.jpg) no-repeat;
+}
+
+#register .right{
+    width: 340px;
+    height: 475px;
+    float: right;
+    border: 1px solid #ccc;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+
+footer {
+    line-height: 22px;
+    padding: 30px 0;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+}
+.area {
+    width: 980px;
+}
+footer .area a{
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+footer .area a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.scan-tear-angle{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    cursor: pointer;
+    background: url(../img/erweima.png)no-repeat;
+}
+.login-notices{
+    color: #e60044;
+    display: inline-block;
+    z-index: 20006;
+    position: absolute;
+    right: 42px;
+    top: 8px;
+    text-align: center;
+    width: 101px;
+    height: 20px;
+    line-height: 20px;
+    background: url(../img/sp.png) no-repeat;
+}
+#register .right .hwid2{
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.drag{
+    width: 240px;
+    height: 32px;
+    line-height: 34px;
+    background-color: #e8e8e8;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.bg{
+    width:40px;
+    height: 100%;
+    position: absolute;
+    background-color: #75CDF9;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    user-select: none;
+}
+.login_mid{
+    width: 400px; 
+}
+#number-login-form{
+    width: 100%;
+}
+#number-login-form span{
+    width: 12px;
+    height: 12px;
+    margin-left: 15px
+}
+#number-login-form input{
+    color: #999;
+    width: 183px;
+    border: 1px solid #c4c4c4;
+    vertical-align: middle;
+    height: 18px;
+    padding: 10px;
+    line-height: 18px;
+    text-align: left;
+    outline: none;
+    border: none;
+
+}
+#number-login-form .username-box{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    margin: 15px 0px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#number-login-form .username-box span{
+    background: url(../img/login_user.png)no-repeat;
+    
+}
+#number-login-form .password-box{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#number-login-form .password-box span{
+    background: url(../img/login_user.png)no-repeat -18px 0px;
+    
+}
+.login_mid #pperrmsg {
+    margin-top: 11px;
+    width: 240px;
+    height: 42px;
+    font-size: 12px
+}
+.login_mid .sub{
+    width: 100%;
+    margin-top: 15px;
+}
+.login_mid .sub span{
+    color: #fff;
+    font-size: 16px;
+    background: red;
+    padding: 10px 42px;
+    margin-right: 50px;
+    cursor: pointer;
+    
+}
+.login_mid .sub a{
+    color: #333;
+}
+.login_mid .sub a:hover{
+    text-decoration: underline;
+}
+.login_mid .fot{
+    margin-top: 20px;
+}
+

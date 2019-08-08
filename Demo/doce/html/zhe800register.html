@@ -18,26 +18,26 @@
             <div class="header-rt">
                 <span>
                     已经有团800或折800帐号了?
-                    <a href="">去登录</a>
+                    <a href="http://127.0.0.1:6789/zhe800/Demo/doce/html/zhe800login.html">去登录</a>
                 </span>
             </div>
         </div>
         <div id="register">
             <div class="left">
                 <div class="inside">
-                    <div class="p">
+                    <div class="form-item">
                         <label for="">手机号：</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="phoneID">
                         <div class="msg_box row1"></div>
                     </div>
-                    <div class="p">
+                    <div class="form-item">
                         <label for="">密码：</label>
-                        <input type="password" name="" id="">
+                        <input type="password" name="" id="passwordA">
                         <div class="msg_box row2"></div>
                     </div>
-                    <div class="p">
+                    <div class="form-item">
                         <label for="">确认密码：</label>
-                        <input type="password" name="" id="">
+                        <input type="password" name="" id="passwordB">
                         <div class="msg_box row3"></div>
                     </div>
                     <div class="drag">
@@ -46,11 +46,11 @@
                         <div class="btn">&gt;&gt;</div>
                     </div>
 
-                    <div class="p phone">
+                    <div class="form-item phone">
                         <label for="">验证码：</label>
-                        <input type="text" name="" id="">
-                        <span id="vcode_box">
-                            <a href="#">免费获取手机验证码</a>
+                        <input type="text" name="" id="msgCode">
+                        <span id="code-sms">
+                            免费获取手机验证码
                         </span>
                         <div class="msg_box row4"></div>
                     </div>
@@ -59,7 +59,7 @@
                               <input checked="checked" id="inputacc" type="checkbox">
                               我已阅读并接受折800的<a target="_blank" href="http://help.zhe800.com/detail/82">《用户服务协议》</a> </p>
                           </div>
-                    <div class="item">
+                    <div class="item" id="registerBtn">
                             <a href="#" class="i_btn i_btn1" id="reg_submit"><i>同意协议并注册</i></a>
                           </div>
                 </div>
@@ -77,5 +77,4 @@
         </footer>
     </div>
 </body>
-
 </html>
