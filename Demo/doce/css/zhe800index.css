@@ -1243,7 +1243,7 @@ body,
 
 #tonew .l-tonew li a {
     display: inline-block;
-    width: 195px;
+    /* width: 185px; */
     color: #666666;
 }
 

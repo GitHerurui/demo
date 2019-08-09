@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html,
+body{
+    width: 100%;
+}
+.boxss {
+    width: 942px;
+    height: 559px;
+    margin: 20px auto 20px;
+    display: flex;
+}
+
+#left {
+    width: 420px;
+    height: 100%;
+    margin-right: 18px;
+}
+
+#left .bigimg {
+    width: 100%;
+    height: 428px;
+
+}
+
+img{
+	border: 0;
+}
+/* 垂直居中 */
+#MagnifierWrap2 {
+    position: relative;
+    width: 366px;
+}
+
+.MagnifierMain {
+    position: relative;
+    width: 366px;
+    height: 366px;
+}
+
+.MagnifierMain img {
+    width: 100%;
+}
+
+.MagnifierDrag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: move;
+}
+
+.MagnifierPop {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 55555;
+    /* background: #fff url(http://fan.yoka.com/fan5.0/img/loading.gif) no-repeat center center; */
+}
+
+.MagnifierImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.spec-items {
+    position: relative;
+    width: 292px;
+    height: 81px;
+    overflow: hidden;
+    padding-top: 10px;
+    margin: 0 auto;
+    
+}
+
+.spec-items ul {
+    width: 500%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    
+}
+
+.spec-items ul * {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.spec-items li {
+    width: 65px;
+    height: 65px;
+    float: left;
+    overflow: hidden;
+    margin-right: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+
+}
+
+.spec-items li.on {
+    border: 2px solid #000;
+}
+
+.spec-items li img {
+    width: 100%;
+    height: 100%;
+}
+
+span.spe_leftBtn,
+span.spe_rightBtn {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 20px;
+    height: 69px;
+    line-height: 69px;
+    font-family: "黑体";
+    text-align: center;
+    font-size: 30px;
+    color: #ddd;
+    cursor: default;
+    background-color: #f9f9f9;
+}
+
+span.on {
+    background-color: #ccc;
+    color: #999;
+    cursor: pointer;
+}
+
+span.spe_leftBtn {
+    left: 0;
+}
+
+span.spe_rightBtn {
+    right: 0;
+}
+#left p {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#left p i {
+    display: inline-block;
+    width: 17px;
+    margin-right: 4px;
+    height: 17px;
+    line-height: 16px;
+    background: url(../images/jinglingtu.png);
+    background-position: -118px 2px;
+}
+
+#right>h2 {
+    margin-top: 21px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+#right>h2 i {
+    background: #00cf6b;
+    font-size: 14px;
+    padding: 2px 6px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#right .price {
+    width: 480px;
+    height: 90px;
+    background: #fff2e8;
+    padding: 8px;
+    position: relative;
+
+}
+
+#right .price-1 {
+    overflow: hidden;
+    display: flex;
+}
+
+#right .price-1 span {
+    font-size: 14px;
+    width: 136px;
+    height: 40px;
+
+}
+
+#right .price-1 span del {
+    margin-left: 32px;
+}
+
+#right .price-1 .div1 {
+    margin-left: 190px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#right .price-1 .div2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+
+}
+#right .price h4{
+    color: orangered;
+    font-size: 20px;
+    position: absolute;
+    left: 5;
+    bottom: 5px;
+}
+
+#right .price h4 span{
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    margin-right: 20px;
+}
+#right .price h4 i{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    color: #ffffff;
+    background: #ff8e1b;
+    padding: 2px 4px;
+    
+}
+#right .peis{
+    /* height: 35px; */
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+#right .peis span{
+    font-size: 13px;
+}
+#right .peis span:nth-child(1){ 
+    margin-right: 38px;
+}
+#right .peis>span:nth-child(3){
+    margin: 0 4px;
+    padding: 2px 4px;
+    padding-right: 20px;
+    border: 1px solid #ffffff;
+    position: relative;
+}
+#right .peis>span:nth-child(3):hover{
+    border: 1px solid orangered;
+    cursor: pointer;
+    background: #fff2e8;
+}
+#right .peis>span:nth-child(3)::after{
+    content: '';
+    display: inline-block;
+    border: 5px solid #cccccc;
+    border-color: #cccccc #ffffff #ffffff #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+#right .peis>span:nth-child(4){
+    margin: 0 4px;
+    padding: 2px 4px;
+    padding-right: 20px;
+    border: 1px solid #ffffff;
+    position: relative;
+}
+#right .peis>span:nth-child(4):hover{
+    border: 1px solid orangered;
+    cursor: pointer;
+    background: #fff2e8;
+}
+#right .peis>span:nth-child(4)::after{
+    content: '';
+    display: inline-block;
+    border: 5px solid #cccccc;
+    border-color: #cccccc #ffffff #ffffff #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+#size{
+    font-size: 13px;
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+#size>span{
+    padding: 5px 10px;
+    border: 2px solid #cccccc;
+    margin-right: 6px;
+    box-sizing: border-box;
+}
+#size .active{
+    color: #ff4400;
+    border: 2px solid orangered;
+}
+#size span:nth-child(1){
+    margin-left: 36px;
+    margin-right: 10px;
+}
+#size>span:hover{
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+#color{
+    display: flex;
+}
+#color dt{
+    font-size: 13px;
+    padding-top: 10px;
+}
+#color .active{
+    color: #ff4400;
+    border: 1px solid orangered;
+}
+#color dd{
+   width: 30px;
+   height: 35px;
+   border: 1px solid #cccccc;
+   margin: 12px;
+   padding: 5px;
+}
+#color dd:hover{
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+#color dd img{
+    width: 100%;
+    height: 100%;
+}
+#quantity{
+    font-size: 14px;
+    width: 100%;  
+    height: 35px;
+    box-sizing: border-box;
+    display: flex; 
+}
+#quantity dt{
+    font-size: 13px;
+    margin-right: 36px;
+    line-height: 30px;
+
+}
+#quantity dd{
+    width: 106px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+#quantity dd span{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 28px;
+    height: 100%;
+    text-align: center;
+    background: #cccccc;
+    font-size: 20px;
+}
+#quantity dd span:hover{
+    cursor: pointer;
+}
+#quantity dd input{
+   border: 0;
+   width: 50px;
+   height: 28px;
+   box-sizing: border-box;
+   text-align: center;
+}
+#quantity .dsp{
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 8px;
+}
+#huab{
+    display: flex;
+    margin-top: 10px;
+}
+#huab dt{
+    font-size: 13px;
+    margin-right: 10px;
+}
+#huab dd{
+    width: 90px;
+    height: 48px;
+    border: 1px solid #cccccc;
+    margin-right: 8px;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 0;
+    box-sizing: border-box;
+}
+#huab dd:hover{
+    cursor: pointer;
+}
+#huab .active{
+    color: orangered;
+    border: 1px solid orangered;
+}
+#shoping{
+    margin-top: 40px;
+    font-size: 18px;
+}
+#shoping span{
+    padding: 12px 37px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+#shoping span i{
+    font-size: 20px;
+}
+#shoping span:hover{
+    cursor: pointer;
+}
+#shoping span:nth-child(1){
+    background: #ffe4d0;
+    color: orangered;
+}
+#shoping span:nth-child(1):hover{
+    background:#fcd9bf;
+}
+#shoping span:nth-child(2){
+    background: #ff4400;
+    color: #ffffff;
+}
+#shoping span:nth-child(2):hover{
+    background:red;
+}
+#cmp{
+    display: flex;
+    margin-top: 28px;
+    font-size: 12px;
+    line-height: 20px;
+}
+#cmp dt{
+    margin-right: 36px;
+}
+#cmp dd{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+#cmp dd:hover{
+    cursor: pointer;
+}
+#cmp dd i{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 4px;
+}
+#cmp .liy i{
+    background: url(../img/images/jinglingtu.png);
+    background-position: -237px -78px;
+}
+#cmp .gongy i{
+    background: url(../img/images/jinglingtu.png);
+    background-position: -199px -117px;
+}
+#pay{
+    display: flex;
+    margin-top: 12px;
+    line-height: 20px;
+    font-size: 12px;
+}
+#pay dt{
+    margin-right: 36px;
+}
+#pay dd{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+#pay dd:hover{
+    cursor: pointer;
+}
+#pay dd i{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 4px;
+}
+#pay .may i{
+    background: url(../img/images/jinglingtu.png);
+    background-position: 0px -57px;
+}
+#pay .jif i{
+    background: url(../img/images/jinglingtu.png);
+    background-position: -279px -18px;
+}

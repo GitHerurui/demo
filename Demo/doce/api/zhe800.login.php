@@ -28,7 +28,4 @@ if(mysqli_num_rows($result) == "0")
 }
 
 echo json_encode($data, true);
-
-// print_r($result);
-// print_r(mysqli_fetch_array($result));
 ?>

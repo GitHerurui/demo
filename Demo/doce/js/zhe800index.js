@@ -146,7 +146,6 @@ $(function () {
             var scrollTop = window.scrollY;
             // console.log(scrollTop);
             if (scrollTop > 1000) {
-                console.log($(".junav1"));
                 $("#junav1").css("display", "block")
             } else {
                 $("#junav1").css("display", "none");
@@ -164,80 +163,46 @@ $(function () {
 
         });
 
+        
+
         //今日更新数据渲染
-        $.ajax({
-            type: "get",
-            url: "../api/zhe800getindex.php",
-            dataType: "json",
-            success: function(response) {
-                console.log(response);
-                if (response.status == "error") {
-                    alert("网络繁忙，请检查网络连接");
-                } else {
-                    console.log("count", response.data.count);
-                    $(".lis-pag").empty();
-                    console.log( $(".lis-pag"));
-                    for (var i = 0; i < response.data.count; i++) {
-                        $(".lis-pag").append(`<span>${i+1}</span>`);
-                    }
-                    $(".lis-pag").children("span:first").addClass("active").css("color","#ffffff");
-                }
-            }
-        });
-    
-    
-        let getList = (page, type) => {
-            $.ajax({
-                type: "post",
-                url: "../api/zhe800getindex.php",
-                data: `page=${page}&type=${type}`,
-                dataType: "json",
-                success: function(response) {
-                    console.log(response);
-                    var res = response.map(ele => {
-                        // console.log(ele.title);
-                        return `
-                        <li>
-                            <div class="tonewimg">
-                                <img src="${ele.src}" alt="">
-                            </div>
-                            <div class="l-title">
-                                <a href="">${ele.title}</a>
-                                <span>${ele.coupon}</span>
-                            </div>
-                            <p class="coupon-collect"><span class="coupon">${ele.brand_fav}</span><span
-                                    class="brand_fav">${ele.rest}</span></p>
-                        </li>
-                        `
-                    }).join("");
-                    $(".l-tonew").html(res);
-                }
+       $.ajax({
+           type: "post",
+           url: "../zhe800.json",  
+           dataType: "json",
+           success: function (response) {
+            $.each(response, function (index, ele) { 
+                
+                 $(".l-tonew").append(
+                   `<li>
+                    <div class="tonewimg">
+                        <img src="${ele.src}" alt="">
+                    </div>
+                    <div class="l-title">
+                        <a href="">${ele.title}</a>
+                       <span class="coupon">${ele.coupon}</span>
+                    </div>
+                    <p class="coupon-collect"><span class="coupon">${ele.brand_fav == null?'':ele.brand_fav}</span><span
+                            class="brand_fav">${ele.rest}</span></p>
+                </li>`
+                 );
             });
-        }
-    
-        var orderType = ["default", "priceA", "priceB"];
-        var type = "default";
-        getList(0, type);
-    
-        $("#page").on("click", "a", function() {
-            // console.log($(this).index());
-            /* 设置当前标签的选中状态 */
-            getList($(this).index(), type);
-            $("#page").children("a").eq($(this).index()).addClass("active").siblings().removeClass("active");
-        })
-    
-        // /* 点击排序 */
-        // $("#nav li").click(function() {
-        //     type = orderType[$(this).index()];
-        //     /* 设置当前标签的选中状态 */
-    
-            getList(0, type);
-            $("#page").children("a").eq(0).addClass("active").siblings().removeClass("active");
-        })
+             
+           }
+       });
+     
+
+       $(".l-tonew").click('li',function (e) { 
+           console.log(5555);
+           
+           window.location.href ="../html/zhe800liebiaoye.html"
+       });
+            
+        })()
 
 
 
-
+       
 
 
 

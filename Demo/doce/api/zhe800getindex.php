@@ -3,7 +3,7 @@
 $con = mysqli_connect("127.0.0.1", "root", "", "zhe800register");
 
 # 查询获取表中的所有内容
-$sql = "SELECT * FROM `index.list`";
+$sql = "SELECT * FROM `indexlist`";
 
 $result = mysqli_query($con,$sql);
 if(!$result)
