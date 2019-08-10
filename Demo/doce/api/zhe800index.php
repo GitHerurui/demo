@@ -11,7 +11,7 @@ for ($i = 0; $i < count($arr); $i++) {
   $brand_fav = $arr[$i]["brand_fav"];
   $rest = $arr[$i]["rest"];
 
-  $sql = "INSERT INTO `indexlist` (`src`, `title`, `coupon`, `brand_fav`, `rest`) VALUES ('$src', '$title', '$coupon', '$brand_fav', '$rest')";
+  $sql = "INSERT INTO `indexlist` (`id`,`src`, `title`, `coupon`, `brand_fav`, `rest`) VALUES ('$i','$src', '$title', '$coupon', '$brand_fav', '$rest')";
   mysqli_query($con, $sql);
 }
 

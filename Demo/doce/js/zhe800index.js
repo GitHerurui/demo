@@ -166,41 +166,99 @@ $(function () {
         
 
         //今日更新数据渲染
-       $.ajax({
-           type: "post",
-           url: "../zhe800.json",  
-           dataType: "json",
-           success: function (response) {
-            $.each(response, function (index, ele) { 
+    //    $.ajax({
+    //        type: "post",
+    //        url: "../zhe800.json",  
+    //        dataType: "json",
+    //        success: function (response) {
+    //         $.each(response, function (index, ele) { 
                 
-                 $(".l-tonew").append(
-                   `<li>
-                    <div class="tonewimg">
-                        <img src="${ele.src}" alt="">
-                    </div>
-                    <div class="l-title">
-                        <a href="">${ele.title}</a>
-                       <span class="coupon">${ele.coupon}</span>
-                    </div>
-                    <p class="coupon-collect"><span class="coupon">${ele.brand_fav == null?'':ele.brand_fav}</span><span
-                            class="brand_fav">${ele.rest}</span></p>
-                </li>`
-                 );
-            });
+    //              $(".l-tonew").append(
+    //                `<li>
+    //                 <div class="tonewimg">
+    //                     <img src="${ele.src}" alt="">
+    //                 </div>
+    //                 <div class="l-title">
+    //                     <a href="">${ele.title}</a>
+    //                    <span class="coupon">${ele.coupon}</span>
+    //                 </div>
+    //                 <p class="coupon-collect"><span class="coupon">${ele.brand_fav == null?'':ele.brand_fav}</span><span
+    //                         class="brand_fav">${ele.rest}</span></p>
+    //             </li>`
+    //              );
+    //         });
              
-           }
-       });
+    //        }
+    //    });
      
 
-       $(".l-tonew").click('li',function (e) { 
-           console.log(5555);
+    //    $(".l-tonew").click('li',function (e) { 
            
-           window.location.href ="../html/zhe800liebiaoye.html"
-       });
+    //        window.location.href ="../html/zhe800liebiaoye.html"
+    //    });
             
         })()
 
-
+        let orderType = 0;
+        let getList = (page) => {
+            $.ajax({
+                type: "post",
+                url: "../api/indexgetlis.php",
+                data: `page=${page}&orderType=${orderType}`,
+                dataType: "json",
+                success: function(response) {
+                    console.log(response);
+                    // [2] 根据数据渲染页面
+                    var res = response.data.map(ele => {
+                        $(".l-tonew").append(
+                            `<li>
+                             <div class="tonewimg">
+                                 <img src="${ele.src}" alt="">
+                             </div>
+                             <div class="l-title">
+                                 <a href="">${ele.title}</a>
+                                <span class="coupon">${ele.coupon}</span>
+                             </div>
+                             <p class="coupon-collect"><span class="coupon">${ele.brand_fav == null?'':ele.brand_fav}</span><span
+                                     class="brand_fav">${ele.rest}</span></p>
+                         </li>`
+                          );
+                    })
+                }
+            });
+    
+        }
+    
+        //[1] 获取服务器存储商品数据
+        getList(0);
+    
+        //[2] 获取总页码
+        $.ajax({
+            type: "post",
+            url: "../api/zhe800getindex.php",
+            dataType: "json",
+            success: function(response) {
+                let pageSize = response.data.count;
+                var res = '';
+                for (let i = 0; i < pageSize; i++) {
+                    $(".lis-pag").append(`<span>${i + 1}</span>`)
+                }
+                $(".lis-pag").children("span").eq(0).addClass("active");
+            }
+        });
+    
+        $(".lis-pag").on("click", "span", function() {
+            var index = $(this).index();
+            /* (1) 设置当前标签的选中状态 */
+            $(this).addClass("active").siblings().removeClass("active");
+            /* (2) 发送网络更新页面 */
+            getList(index);
+        })
+    
+        // $("#nav li").click(function() {
+        //     orderType = $(this).index();
+        //     getList(0);
+        // })
 
        
 
